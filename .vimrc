@@ -14,9 +14,23 @@
  set background=dark
  syntax on
  set number
- set relativenumber
+ " set relativenumber
+ 
+ " visual settings
+ set number
+ set cursorline
+ set showcmd
+ set wildmenu
+ set showmatch
  set scrolloff=7
  
+" searching
+set incsearch
+set hlsearch
+
+" movement
+
+
 " indent
  set expandtab
  set autoindent
