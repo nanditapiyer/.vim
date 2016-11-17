@@ -1,4 +1,5 @@
- set nocompatible              " be iMproved, required
+set t_Co=256 
+set nocompatible              " be iMproved, required
  filetype off
  set rtp+=~/.vim/bundle/Vundle.vim
  call vundle#begin()
@@ -7,6 +8,7 @@
  Plugin 'morhetz/gruvbox'
  
  call vundle#end()            " required
+ 
  filetype plugin indent on    " required
  
  
@@ -14,7 +16,7 @@
  set background=dark
  syntax on
  set number
- " set relativenumber
+ set relativenumber
  
  " visual settings
  set number
@@ -23,6 +25,7 @@
  set wildmenu
  set showmatch
  set scrolloff=7
+
  
 " searching
 set incsearch
@@ -36,7 +39,19 @@ set hlsearch
  set autoindent
  set smartindent
  set copyindent
- 
+        
+
+ set nostartofline
+
+ set ruler
+
+ " set confirm "asks to confirm changes
+
+ set mouse=a "allows for mouse
+
+
+
+
  let s:comment_map = { 
      \   "c": '\/\/',
      \   "cpp": '\/\/',
