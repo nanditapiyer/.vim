@@ -2,18 +2,15 @@ set t_Co=256
 set nocompatible              " be iMproved, required
  filetype off
  set rtp+=~/.vim/bundle/Vundle.vim
- call vundle#begin()
  
- Plugin 'VundleVim/Vundle.vim'
- Plugin 'morhetz/gruvbox'
- 
- call vundle#end()            " required
+syntax enable
+colorscheme monokai
  
  filetype plugin indent on    " required
+
+ " colorscheme desert
  
- 
- colorscheme gruvbox 
- set background=dark
+ " set background=dark
  syntax on
  set number
  set relativenumber
@@ -21,6 +18,7 @@ set nocompatible              " be iMproved, required
  " visual settings
  set number
  set cursorline
+ set cursorcolumn
  set showcmd
  set wildmenu
  set showmatch
