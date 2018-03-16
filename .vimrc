@@ -2,18 +2,21 @@ set t_Co=256
 set nocompatible              " be iMproved, required
  filetype off
  set rtp+=~/.vim/bundle/Vundle.vim
+ " call vundle#begin()
  
-syntax enable
-colorscheme monokai
+ " Plugin 'VundleVim/Vundle.vim'
+ " Plugin 'morhetz/gruvbox'
+ 
+ " call vundle#end()            " required
  
  filetype plugin indent on    " required
-
- " colorscheme desert
  
- " set background=dark
- syntax on
+ syntax enable
+ colorscheme molokai
+ set background=dark
  set number
  set relativenumber
+
  
  " visual settings
  set number
@@ -35,8 +38,10 @@ set hlsearch
 " indent
  set expandtab
  set autoindent
- set smartindent
+ " set smartindent <- don't use this according to stack overflow
  set copyindent
+ set shiftwidth=2
+ set tabstop=2
         
 
  set nostartofline
