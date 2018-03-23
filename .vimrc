@@ -2,12 +2,12 @@ set t_Co=256
 set nocompatible              " be iMproved, required
  filetype off
  set rtp+=~/.vim/bundle/Vundle.vim
- " call vundle#begin()
+ call vundle#begin()
  
- " Plugin 'VundleVim/Vundle.vim'
- " Plugin 'morhetz/gruvbox'
- 
- " call vundle#end()            " required
+  Plugin 'VundleVim/Vundle.vim'
+  "Plugin 'morhetz/gruvbox'
+  Plugin 'kien/ctrlp.vim'
+  call vundle#end()            " required
  
  filetype plugin indent on    " required
  
@@ -40,8 +40,8 @@ set hlsearch
  set autoindent
  " set smartindent <- don't use this according to stack overflow
  set copyindent
- set shiftwidth=2
- set tabstop=2
+ set shiftwidth=4
+ set tabstop=4
         
 
  set nostartofline
