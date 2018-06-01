@@ -1,2 +1,2 @@
 # .vim
-N, you should add stuff to this readme
+a simple .vimrc for simple people
